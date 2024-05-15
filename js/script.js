@@ -1,8 +1,12 @@
-const shoppingList = ['carne', 'pesce', 'pane', 'latte', 'pasta']
-
-let i = 0
+const shoppingList = ['carne', 'pesce', 'pane', 'latte', 'pasta'];
+const ulElement = document.querySelector('ul');
+let i = 0;
 
 while (i < shoppingList.length){
-    console.log(i)
+
+    const liElement = document.createElement('li');
+    liElement.append(shoppingList[i]);
+    ulElement.appendChild(liElement);
     i++
+
 }
